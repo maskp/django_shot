@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>Document</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+</head>
+<body>
+  <div>
+    {% block content%}
+    {% include '../../includes/htmlsnippet.html'%}
+    {% endblock %}
+  </div>
+</body>
+</html>
